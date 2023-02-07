@@ -1,0 +1,19 @@
+def predict(X, param):
+    """Predicts the target values given the input data and the learned parameters."""
+    return x*param[1] + param[0]
+
+def mean_squared_error(y_pred, y_true):
+    """Computes the mean squared error between the predicted and true target values."""
+    return sum((y_true-y_pred)**2)/len(y_pred)
+
+def plot_regression_line(X, y, param):
+    """Plots the regression line and the scatter plot of the data."""
+
+    # Using seaborn which I like
+    sns.regplot(X, y, param)
+    
+    # Using matplotlib
+    #plt.scatter(param)
+    #plt.plot(X, y)
+    #plt.show()
+    
