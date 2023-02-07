@@ -44,3 +44,5 @@ What is Provided:
 You will submit your code in this repo and then the final notebook / script with in Canvas
 
 You can come up with your own implementation or follow the instructions provided in class. 
+
+A project plan template can be found at https://bit.ly/3DIV1O6 
