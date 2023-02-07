@@ -1,0 +1,46 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+def predict(X, param):
+    """Predicts the target values given the input data and the learned parameters."""
+    return x*param[1] + param[0]
+
+def mean_squared_error(y_pred, y_true):
+    """Computes the mean squared error between the predicted and true target values."""
+    return sum((y_true-y_pred)**2)/len(y_pred)
+
+def plot_regression_line(X, y, param):
+    """Plots the regression line and the scatter plot of the data."""
+
+    # Using seaborn which I like
+    sns.regplot(X, y, param)
+    
+    # Using matplotlib
+    #plt.scatter(param)
+    #plt.plot(X, y)
+    #plt.show()
+    
+def compute_cost (X, y, params):
+    """Compute cost"""
+    m = len (y)
+    predictions = X.dot(params)
+    errors = np.subtract(predictions, y)
+    sqrErrors = np.square(errors)
+    cost = 1 / (2 * m) * np.sum(sqrErrors)
+    return cost
+
+def gradient_descent(X, y, params, learning_rate, num_iterations):
+    """Perform a gradient descent"""
+    m = len (y)
+    X_0 = np.ones((m, 1))
+    X_1 = X.reshape(m, 1)
+    X = np.hstack((X_0, X_1))
+    cost = []
+    
+    for i in range(num_iterations):
+        predictions = X.dot(params)
+        errors = np.subtract(predictions, y)
+        sum_delta = (learning_rate / m) * X.transpose().dot(errors)
+        params = params - sum_delta   
+        cost.append(compute_cost (X, y, params))     
+    return params, cost
