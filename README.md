@@ -43,4 +43,4 @@ What is Provided:
 
 You will submit your code in this repo and then the final notebook / script with in Canvas
 
-
+You can come up with your own implementation or follow the instructions provided in class. 
