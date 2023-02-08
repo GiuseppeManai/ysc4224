@@ -1,3 +1,11 @@
+# Team 2
+# Ahmed Fedi Lassoued 
+# Lim Shan En Daniel 
+# Tristan Koh Ly Wey 
+# Vasu Namdeo 
+# Zen Alexander Goh Wei Han
+# Naman Vishal Kedia
+
 import numpy as np
 import pandas as pd
 from matplotlib import pyplot as plt 
