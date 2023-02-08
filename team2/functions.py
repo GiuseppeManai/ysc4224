@@ -36,7 +36,7 @@ def plot_regression_line(X, y, params) :
     plt.show()
 
 
-def gradient_descent(x, y, params, learning_rate, num_iterations,):    
+def gradient_descent(x, y, params, learning_rate, num_iterations):    
     """Runs gradient descent to learn the parameters 
     of the linear regression model."""
 
