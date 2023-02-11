@@ -27,6 +27,7 @@ def gradient_descent(X, y, params, learning_rate, num_iterations):
         if abs (prev_cost - curr_cost) <= threshold:
             break
         costs.append(curr_cost)
+        prev_cost = curr_cost
         
         diff = np.subtract(y_pred, y)
         derivative = (2 * learning_rate/ m) * np.dot(X.T, diff)
