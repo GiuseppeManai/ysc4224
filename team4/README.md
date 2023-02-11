@@ -1,6 +1,6 @@
 README
 
 Group 4:
-Bekzod Normatov
-Yusra I. Zaheer
+Bekzod Normatov,
+Yusra I. Zaheer,
 Leah Kioko
