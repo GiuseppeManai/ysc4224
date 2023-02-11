@@ -11,36 +11,25 @@ def mean_squared_error(y_pred, y_true):
 
 def plot_regression_line(X, y, param):
     """Plots the regression line and the scatter plot of the data."""
-
-    # Using seaborn which I like
-    sns.regplot(X, y, param)
+    sns.regplot(x = X, y = y, data = param)
     
-    # Using matplotlib
-    #plt.scatter(param)
-    #plt.plot(X, y)
-    #plt.show()
-    
-def compute_cost (X, y, params):
-    """Compute cost"""
-    m = len (y)
-    predictions = X.dot(params)
-    errors = np.subtract(predictions, y)
-    sqrErrors = np.square(errors)
-    cost = 1 / (2 * m) * np.sum(sqrErrors)
-    return cost
-
 def gradient_descent(X, y, params, learning_rate, num_iterations):
-    """Perform a gradient descent"""
     m = len (y)
-    X_0 = np.ones((m, 1))
-    X_1 = X.reshape(m, 1)
-    X = np.hstack((X_0, X_1))
-    cost = []
+
+    threshold = 0.00000001
+    costs = []
+    prev_cost = float('inf')
+    curr_cost = 0
     
     for i in range(num_iterations):
-        predictions = X.dot(params)
-        errors = np.subtract(predictions, y)
-        sum_delta = (learning_rate / m) * X.transpose().dot(errors)
-        params = params - sum_delta   
-        cost.append(compute_cost (X, y, params))     
-    return params, cost
+        y_pred = predict (X, params)
+        curr_cost = mean_squared_error (y_pred, y)
+        if abs (prev_cost - curr_cost) <= threshold:
+            break
+        costs.append(curr_cost)
+        
+        diff = np.subtract(y_pred, y)
+        derivative = (2 * learning_rate/ m) * np.dot(X.T, diff)
+        params = params - derivative
+   
+    return params, costs
