@@ -51,7 +51,7 @@ A project plan template can be found at https://bit.ly/3DIV1O6
 
 ## Project 2. Customer Churn Prediction
 
-You have conducted the EDA for the Churn data, now it is time to build a model that can predict which customers are more likely to churn.  You should use both techniques learnt so far: linear and logistic regression, and think on how to formulate the problem in both cases, see what and why makes sense. 
+You have conducted the EDA for the Churn data, now it is time to build a model that can predict which customers are more likely to churn.  You should use one of the techniques learnt so far: linear and logistic regression, and think on how to formulate the problem in both cases, see what and why makes sense.  You can just implement one and provide explanations why you chose it.
 
 What is Provided:
 * Detailed Instructions
@@ -69,7 +69,7 @@ What is Provided:
 
 You are required to submit two artefacts:
 1. Team presentation on the results of the churn modeling and analysis - 5 min.
-2. Notebook with the implementation of the different aspects such as feature engineering, different modeling and model accuracy comparisons.  
+2. Notebook with the implementation of the different aspects such as EDA, feature engineering, different modeling and model accuracy comparisons.  
 
 You should split the work, collaborate on github and ensure that the final code is correct and runs.  The notebook will be assessed on these aspects:
 * Comprehensiveness (7 points)
