@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 
 def predict(X, param):
     """Predicts the target values given the input data and the learned parameters."""
-    return (X.iloc[:, [1]].values*param[1]) + param[0]
+    return (X.iloc[:, 1]*param[1]) + param[0]
     
 
 def mean_squared_error(y_pred, y_true):

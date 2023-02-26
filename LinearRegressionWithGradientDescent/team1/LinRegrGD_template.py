@@ -1,6 +1,16 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[1]:
+
+
 # importing libraries
 import numpy as np
 import matplotlib.pyplot as plt
+
+
+# In[2]:
+
 
 def predict(X, param):
     """Predicts the target values given the input data and the learned parameters."""
@@ -34,6 +44,10 @@ def gradient_descent(X, y, param, learning_rate, num_iterations):
         # print("Iteration %d | Cost: %f" % (i, J))
         
     return param, costs
+
+
+# In[3]:
+
 
 get_ipython().system('jupyter nbconvert --to script LinRegrGD_template.ipynb')
 
