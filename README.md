@@ -30,7 +30,7 @@ For our project everyone can take any role, but everyone will be a Individual Co
 What is Provided:
 * Detailed Instructions
 * Code instructions to complete
-* This GitHub Repository where each team has a folder under LinearRegressionWithGradientDescent
+* This GitHub Repository where each team has a folder under **LinearRegressionWithGradientDescent**
 * A template Trello board for project management (optional)
 * Help online:
 	* Use documentation first, try to understand the problem and the solutions
@@ -56,7 +56,7 @@ You have conducted the EDA for the Churn data, now it is time to build a model t
 What is Provided:
 * Detailed Instructions
 * Code instructions to complete
-* This GitHub Repository for each team
+* This GitHub Repository where each team has a folder under **Churn_Model** 
 * A template Trello board for project management
 * Help online:
 	* Use documentation first, try to understand the problem and the solutions
